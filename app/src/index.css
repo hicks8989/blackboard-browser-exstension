@@ -1,0 +1,36 @@
+body {
+  width: 364px;
+  max-width: 364px;
+  background-color: #343a40;
+}
+
+input[type="text"],
+input[type="password"],
+select.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select.form-control:focus {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #fafafac5;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+#main {
+  height: 480px;
+  max-height: 480px;
+  overflow-y: scroll;
+}

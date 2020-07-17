@@ -1,9 +1,10 @@
 {
   "name": "Blackboard",
-  "description": "Extension that allows users to easily access their Blackboard account from their prefered browser.",
+  "manifest_version": 2,
+  "description": "Allows users to easily access their Blackboard account from their prefered browser.",
   "version": "0.0.1",
   "browser_action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_title": "Blackboard"
   },
   "icons": {
@@ -11,5 +12,10 @@
     "48": "logo-small.png",
     "128": "logo-small.png"
   },
-  "permissions": []
+  "content_security_policy": "script-src 'self' 'sha256-GgRxr...'; object-src 'self'",
+  "permissions": [
+    "webRequest",
+    "*://*.google.com/"
+  ],
+  "scripts": "js/background.js"
 }
