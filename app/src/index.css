@@ -1,5 +1,7 @@
 body {
-  width: 320px;
+  width: 364px;
+  max-width: 364px;
+  background-color: #343a40;
 }
 
 input[type="text"],
@@ -25,4 +27,10 @@ select.form-control:focus {
 a {
   color: inherit !important;
   text-decoration: none !important;
+}
+
+#main {
+  height: 480px;
+  max-height: 480px;
+  overflow-y: scroll;
 }
